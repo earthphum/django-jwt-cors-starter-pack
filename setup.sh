@@ -10,6 +10,10 @@ source .venv/bin/activate
 # Install Dependencies
 pip install -r requirement.txt
 
+# del .git
+rm -rf .git
+#You can initial git with yourselft by run bash: git init
+
 # RUN migrate and makemigrations
 python manage.py makemigrations
 python manage.py migrate
